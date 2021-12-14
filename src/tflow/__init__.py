@@ -70,4 +70,4 @@ def adjust_batch_size_tpu(batch_size):
     if ENV == 'Colab' and HARDWARE == 'TPU':
         # Colab TPU have less memory than Kaggle TPUs
         print('Halfing batch size for Colab TPU')
-    return max(batch_size, 2)
+    return max(batch_size, 2) 
